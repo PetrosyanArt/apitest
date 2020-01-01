@@ -9,7 +9,9 @@
 <body>
     <script>
     
-    fetch ('https://api.brewerydb.com/v2/beers?key=6d66b737226cdd5d6f16d4a6dff7f012')
+    fetch ('https://api.brewerydb.com/v2/beers?key=6d66b737226cdd5d6f16d4a6dff7f012', {
+        mode: "no-cors"
+    })
     .then(data => data.json())
     .then(data=>console.log(data))
     .catch(error=>console.log(error));
