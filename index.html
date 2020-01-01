@@ -24,7 +24,8 @@
 //   });
 $.ajax({
     method: "GET",
-    url: 'https://api.brewerydb.com/v2/beers?key=6d66b737226cdd5d6f16d4a6dff7f012'
+    url: 'https://api.brewerydb.com/v2/beers?key=6d66b737226cdd5d6f16d4a6dff7f012',
+    headers: {'Access-Control-Allow-Origin': "*"}
 }).done(function(data) {console.log(data)}) 
     </script>
     
